@@ -1,0 +1,366 @@
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Futura-Medium, "Trebuchet MS", Arial, sans-serif;
+    background: #000;
+    color: #fff;
+}
+/* Header */
+header {
+    background-image: url(images/accelatec-head.jpg);
+    position: relative;
+    overflow: hidden;
+    height: 1100px;
+    background-size: 100%;
+    background-position: top;
+    background-attachment: fixed;
+    /*background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+}
+.headerImage {
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    
+}
+.headerImage:after {
+    content: '';
+    background: #4DC8FF;
+    opacity: .79;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.slogan {
+    margin-top: 130px;
+    font-weight: bold;
+    font-size: 250%;
+    text-align: center;
+    text-shadow: 10px 7px 10px rgb(0, 0, 0, 0.3);
+    align-self: center;
+}
+.tagline {
+    margin: 0;
+}
+.slogan #performance {
+    font-size: 250%;
+}
+.header img {
+    margin: 45px auto;
+    width: 550px;
+}
+
+/* Main Body  */
+.mainContainer {
+    background: #000;
+    height: 300px;
+}
+.blackBox {
+    background: #000;
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    transform: skewY(-6deg);
+    height: 300px;
+    width: 100%;
+}
+
+.mainContent {
+    display: inline-block;
+    vertical-align: top;
+}
+.carImageContainer {
+    position: relative;
+    width: 55%;
+    top: -150px;
+}
+.carInfoContainer {
+    position: relative;
+    top: -100px;
+    margin-left: 30px;
+    width: 40%;
+}
+.carInfoHeader {
+    border-left: 10px solid #57D2FF;
+    padding: 10px 0 10px 20px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.carInfoText {
+    font-size: 17px;
+    line-height: 25px;
+}
+.mainContent img {
+    width: 100%;
+}
+.learnMore {
+    background: #57D2FF;
+    padding: 10px 5px;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px auto 30px auto;
+    width: 125px;
+    text-align: center;
+}
+.carInfoContainer .learnMore {
+    margin: 30px 0;
+}
+
+/* Products */
+.productContainer {
+    background-image: url(images/empty-parking-spot-full.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.productContainer .carInfoHeader {
+    margin: 210px 0 0 100px;
+    height: 35px;
+    
+}
+#productsGrouping {
+    text-align: center;
+    display: flex;
+    margin: -150px auto 0 auto;
+    align-items: baseline;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.productGroup {
+    flex: 2;
+    width: 400px;
+    display: inline-block;
+    margin: 10px auto;
+    
+}
+.productTitle h3 {
+    height: 45px;
+}
+.productImage {
+    width: 185px;
+    margin: 0 auto;
+    text-align: center;
+}
+.productImage img {
+    width: 75%;
+}
+.soundSymposer img {
+    margin-bottom: 30px;
+}
+.panelMolding img {
+    margin-bottom: 15px;
+}
+.productDesc > p {
+    width: 85%;
+    height: 100px;
+    margin: 0 auto;
+}
+
+/* Contact Us */
+.contactContainer {
+    background-image: url(images/accelatec-footer.jpg);
+    
+    height: 800px;
+}
+.contactInfo {
+    width: 400px;
+    float: left;
+    margin: 100px;
+}
+.infoDesc {
+    line-height: 30px;
+    font-size: 20px;
+}
+.shopNow {
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 10px 50px;
+    width: 100px;
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    
+}
+footer img {
+    margin: 0 auto;   
+}
+
+/* Mobile */
+@media screen and (max-width: 1750px){
+    header {
+        background-position: center top;
+        background-size: 1950px;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1530px){
+    header {
+        background-position: center top;
+        background-size: 1750px;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (max-width: 1260px){
+    header {
+        height: 800px;
+        background-position: center top;
+        background-size: 1300px;
+        background-repeat: no-repeat;
+    }
+    #productsGrouping {
+        margin: 0 auto;
+    }
+    .slogan {
+        margin-top: 90px;
+        font-size: 200%;
+    }
+    .productGroup {
+        width: 45%;
+        flex: none;
+    }
+    
+}
+@media screen and (max-width: 1050px){
+    header {
+        height: 675px;
+        background-size: 1100px;
+    }
+    .slogan {
+        margin-top: 50px;
+        font-size: 150%;
+    }
+    .blackBox {
+        height: 250px;
+    }
+    .mainContainer {
+        height: auto;
+    }
+    .mainContent {
+        display: block;
+        width: 85%;
+    }
+    .productContainer .carInfoHeader {
+        margin: 0 0 50px 30px;
+    }
+    
+    .productContainer {
+        background-position: center;
+        background-size: 1200px;
+        height: auto;
+    }
+    .contactContainer {
+        background-position: center bottom;
+        background-size: 1250px;
+        background-repeat: no-repeat;
+    }
+    .contactInfo {
+        margin: 100px 0 0 30px;
+    }
+   
+}
+@media screen and (max-width: 770px){
+    header {
+        height: 580px;
+        background-size: 860px;
+    }
+    .header img {
+        width: 65%;
+    }
+    .slogan {
+        margin-top: 40px;
+        font-size: 165%;
+    }
+    .slogan #performance {
+        font-size: 165%;
+    }
+    
+    
+}
+@media screen and (max-width: 650px){
+    header {
+        background-position: 75% 0%;
+        background-size: 1000px;
+        height: 650px;
+    }
+    .carInfoHeader {
+        margin: 0;
+    }
+    .productImage {
+        width: 80%;
+    }
+    .productDesc {
+        font-size: 12px;
+    }
+    
+    .learnMore {
+        padding: 15px 25px;
+        font-size: 12px;
+        width: 75px;
+    }
+    
+    .contactInfo {
+        text-align: center;
+        width: 250px;
+        margin: 0 auto;
+        float: none;
+    }
+    .contactInfo img {
+        width: 100%;
+        
+    }
+    .infoDesc {
+        font-size: 16px;
+    }
+    .shopNow {
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 550px){
+    .slogan {
+        font-size: 150%;
+    }
+}
+@media screen and (max-width: 450px){
+    .slogan {
+        font-size: 100%;
+        margin-top: 100px;
+    }
+    header {
+        background-position: 75% 0%;
+        background-size: 1000px;
+        height: 650px;
+    }
+    .productContainer .carInfoHeader {
+        height: auto;
+    }
+}

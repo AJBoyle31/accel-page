@@ -1,0 +1,18 @@
+#container {
+    
+}
+.leftSide, .rightSide {
+    display: inline-block;
+}
+.leftSide {
+    width: 65%;
+}
+.leftSide img {
+    float: right;
+    margin-right: 50px;
+}
+.rightSide {
+    width: 30%;
+    vertical-align: top;
+    position: fixed;
+}
